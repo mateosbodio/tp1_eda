@@ -3,8 +3,16 @@
 // B) Ejemplifique, como se coloca un comentario de una o varias líneas.
 // C) Como se baja un renglón al mostrar algo por pantalla, nombre alternativas.
 
-#include <stdio.h>;
+#include <iostream>;
+#include <string>;
+using namespace std;
 
-main(void){
-
+int main(){
+string nombre,apellido;
+cout<<"Ingrese su nombre: "<<endl;
+getline(cin,nombre);
+cout<< "Ingrese su apellido:" << endl;
+getline(cin,apellido);
+cout<<"Nombre y Apellido: "<< nombre <<" "<< apellido << endl;
+return 0;
 }
